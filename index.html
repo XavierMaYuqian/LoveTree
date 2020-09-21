@@ -27,10 +27,12 @@
 <body>
 
 <img src="https://ajlovechina.github.io/loveBalloon/static/music.png" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
-<audio controls autoplay>
-    <source src="./index_files/music.mp3" type="audio/mp3"/>
-    Your browser does not support the audio element.
-</audio>
+<div id="player">
+    <audio controls autoplay>
+        <source src="./index_files/music.mp3" type="audio/mp3"/>
+        Your browser does not support the audio element.
+    </audio>
+</div>
 <style type="text/css">
     .rotateImages{
         -webkit-animation:myRotate 10s linear infinite;
